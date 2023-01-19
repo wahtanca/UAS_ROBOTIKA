@@ -1,0 +1,53 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation -0.15970113043374592 0.011964839767559462 0.9870928991475527 2.993972730897337
+  position 2.059824306585667 -0.7943675727564526 1.0799676559195055
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorTileSize 0.25 0.25
+  wallHeight 0.05
+}
+WoodenBox {
+  translation -0.323236 -0.325317 0.5
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.636756 -0.534796 0.5
+  rotation 0 0 1 4.692820414042842e-06
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.351104 0.367235 0.5
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+Mavic2Pro {
+  hidden position_0_0 2.26236079651628e-09
+  hidden linearVelocity_0 8.978004792135e-07 8.941599614670281e-07 3.3215061935769656e-15
+  hidden angularVelocity_0 -3.926654187620292e-12 1.801315034033525e-12 4.673174341689158e-06
+  hidden position_5_0 -1.4939231185451263e-08
+  hidden linearVelocity_5 3.5537693941843365e-07 6.535630402860707e-07 -1.6464640795221838e-13
+  hidden angularVelocity_5 7.179621345687047e-10 3.4361383131216334e-10 4.650331509497821e-06
+  hidden position_6_0 2.3949097338719636e-09
+  hidden linearVelocity_6 3.5471758240917844e-07 6.798568382062074e-07 -1.9983539887916237e-12
+  hidden angularVelocity_6 7.149139620097632e-10 3.425039098679309e-10 4.650331405436814e-06
+  hidden linearVelocity_7 3.3788232698756733e-07 7.130659850679611e-07 -1.5508660760416163e-12
+  hidden angularVelocity_7 -2.420831917083994e-09 8.611147722262932e-09 4.650356045293964e-06
+  translation -2.0625883030696257 0.7072233077819685 0.016708590793154593
+  rotation -0.5680254420556458 -0.8228719581861959 -0.015127379426188744 -3.124093897633719
+}

@@ -1,0 +1,65 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/adept/pioneer2/protos/Pioneer2.proto"
+
+WorldInfo {
+  basicTimeStep 16
+}
+Viewpoint {
+  orientation 0.34588368390275137 -0.5404856700754533 -0.7669678726341472 4.947810560141415
+  position -0.6376392711981134 -1.0251763140624568 1.2400275094569146
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+DEF WALL_1 Solid {
+  translation 0.5 0 0.05
+  children [
+    DEF WALL_SHAPE Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0.498039
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.02 0.98 0.1
+      }
+    }
+  ]
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_2 Solid {
+  translation -0.5 0 0.05
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(1)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_3 Solid {
+  translation 0 -0.5 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(2)"
+  boundingObject USE WALL_SHAPE
+}
+DEF WALL_4 Solid {
+  translation 0 0.5 0.05
+  rotation 0 0 1 1.5708
+  children [
+    USE WALL_SHAPE
+  ]
+  name "solid(3)"
+  boundingObject USE WALL_SHAPE
+}
+Pioneer2 {
+}

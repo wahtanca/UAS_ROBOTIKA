@@ -1,0 +1,196 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/factory/containers/protos/WoodenBox.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/Floor.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/a4/portal/protos/Portal.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/dji/mavic/protos/Mavic2Pro.proto"
+
+WorldInfo {
+  basicTimeStep 16
+  contactProperties [
+    ContactProperties {
+      material2 "dumbbell"
+    }
+  ]
+}
+Viewpoint {
+  orientation -0.45784603987926936 0.11937923125799443 0.8809799106172176 2.7129961754257645
+  position 6.005053211913698 -2.9362848199004223 9.746050179297987
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Floor {
+  size 1 1
+}
+WoodenBox {
+  translation -0.323236 -0.325317 0.5
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.346902 -0.330823 0.5
+  name "wooden box(2)"
+  size 0.1 0.1 0.1
+}
+WoodenBox {
+  translation 0.351104 0.367235 0.5
+  name "wooden box(1)"
+  size 0.1 0.1 0.1
+}
+DEF WALL Solid {
+  translation -0.5450916885567599 -0.034321098139859826 0.09610191952682196
+  rotation -0.0007205009207580661 -0.0007318456648572882 0.9999994726400339 1.5788877821065006
+  children [
+    DEF TEMBOK Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0.498039
+        roughness 0.5
+        metalness 0
+      }
+      geometry Box {
+        size 1 0.1 0.2
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+  physics Physics {
+  }
+  linearVelocity -5.330921736221937e-06 -2.938686183311611e-07 -2.2091900160376093e-06
+  angularVelocity -1.6759571161571763e-06 0.0001422882862246916 2.6366660090797993e-06
+}
+DEF WALL Solid {
+  translation 0.559507 -0.0136114 0.09607600000000005
+  rotation 1.4613046649011413e-17 1.3694855483597163e-17 1 1.5708000000000002
+  children [
+    USE TEMBOK
+  ]
+  name "solid(4)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+  physics Physics {
+  }
+  linearVelocity -7.115014769026175e-18 -3.293485769215665e-18 -2.5011104298755513e-16
+  angularVelocity -3.279398198197584e-17 -8.52627431797987e-17 -4.856662501878494e-20
+}
+DEF WALL Solid {
+  translation 0.008821230292024449 -0.4911368310723467 0.0960648047886827
+  rotation 0.9886654885314063 -0.09724267615729441 0.11438712218044206 0.00023009362309868038
+  children [
+    USE TEMBOK
+  ]
+  name "solid(3)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+  physics Physics {
+  }
+  linearVelocity 8.697410466998222e-06 2.1404334898423862e-06 1.061372988305968e-06
+  angularVelocity -2.07391716259669e-05 2.1124065735667827e-06 1.3054724138561697e-06
+}
+DEF WALL Solid {
+  translation 0.001133202893513829 0.46001408248071207 0.09606118531422747
+  rotation 0.9104034917736008 -0.13423518402746618 0.3913392358754072 0.00016870055483800205
+  children [
+    USE TEMBOK
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 1 0.1 0.2
+  }
+  physics Physics {
+  }
+  linearVelocity 1.1226931661861347e-05 6.779507307824449e-08 1.2358946941048996e-06
+  angularVelocity 3.272977189338346e-06 1.7170039890914044e-06 1.4134951122212172e-06
+}
+DEF DUMBBELL Solid {
+  translation 0.08485347798272741 -0.30451945392659746 0.029215199998745896
+  rotation 0.685653960324812 -0.2690894110339174 0.6763649425867079 -2.5528544426312694
+  children [
+    DEF G0 Group {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.8 0.8 0.8
+            roughness 1
+            metalness 0
+          }
+          geometry Cylinder {
+            height 0.1
+            radius 0.01
+          }
+        }
+        Transform {
+          translation 0 0 0.05
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.8 0.8 0.8
+                roughness 1
+                metalness 0
+              }
+              geometry Sphere {
+                radius 0.03
+                subdivision 2
+              }
+            }
+          ]
+        }
+        Transform {
+          translation 0 0 -0.05
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.8 0.8 0.8
+                roughness 1
+                metalness 0
+              }
+              geometry Sphere {
+                radius 0.03
+                subdivision 2
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  name "solid(5)"
+  contactMaterial "dumbbell"
+  boundingObject USE G0
+  physics Physics {
+    density -1
+    mass 2
+    centerOfMass [
+      0 0 -0.02
+    ]
+  }
+  linearVelocity 0.0002924521196982263 -0.006164349780321757 3.159531187795696e-11
+  angularVelocity 0.2054783260106168 0.009748403992224694 0.0012915516149098207
+}
+Portal {
+  translation 0.4 0 0.9
+}
+Mavic2Pro {
+  hidden position_0_0 2.520273324945609e-09
+  hidden linearVelocity_0 0.1013731921982241 -0.08397306806439592 -0.4100219470659714
+  hidden angularVelocity_0 0.00015274286244587674 0.00018568780985360426 -0.10206833703942028
+  hidden position_5_0 -5.106177595261036e-06
+  hidden linearVelocity_5 0.09496789414339744 -0.09525125130171137 -0.4100521077464802
+  hidden angularVelocity_5 0.00015274275623401333 0.00018568776690140357 -0.10206831185479313
+  hidden rotation_6 0 -1 0 5.106208543403906e-06
+  hidden position_6_0 -6.113632563486959e-05
+  hidden linearVelocity_6 0.09555696069890648 -0.09532580360186109 -0.41005155405855936
+  hidden angularVelocity_6 0.0001254132755190674 0.00012992447770198085 -0.10206838688379138
+  hidden rotation_7 -1 0 0 6.11363246330813e-05
+  hidden linearVelocity_7 0.0962770991915835 -0.09577351687168613 -0.41005125818500354
+  hidden angularVelocity_7 0.00011207290338803825 0.00013646413190343835 -0.1020683158688316
+  translation 0.033368566849720296 -0.1701838180373054 2.50876247344788
+  rotation 0.004994608285907347 0.00969720586457104 -0.9999405072735529 0.45655072183045403
+}

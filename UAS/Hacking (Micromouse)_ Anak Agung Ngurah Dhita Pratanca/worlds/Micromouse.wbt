@@ -1,0 +1,433 @@
+#VRML_SIM R2023a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023a/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.07459836354665451 -0.9943200714094294 0.07591231618458577 4.724190863082381
+  position -0.28554231261504714 -0.7945135144133498 12.243916312853642
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation -0.485724 -0.495304 -0.2000000000000018
+  floorSize 3 3
+  wallHeight 0.05
+}
+Solid {
+  translation -1.18819 -1.44101 -0.15
+  rotation 0 0 -1 -5.307179586466759e-06
+  scale 1.12609 1.12609 1.12609
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS"
+}
+Solid {
+  translation -0.404484 -1.44265 -0.15
+  rotation 0 0 -1 -5.307179586466759e-06
+  scale 1.15411 1.15411 1.15411
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(5)"
+}
+Solid {
+  translation -1.66826 -1.01678 -0.15
+  rotation 0 0 1 -1.5707953071795862
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(6)"
+}
+Solid {
+  translation -1.66601 -0.0839006 -0.15
+  rotation 9.5898e-09 -9.58979e-09 1 -1.5707953071795862
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(7)"
+}
+Solid {
+  translation -1.24095 0.439465 -0.15
+  rotation -9.897504480422099e-09 0.018896108553928162 0.9998214526011723 1.01503e-06
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(8)"
+}
+Solid {
+  translation 1.20306 -0.366755 -0.01
+  rotation 9.59007e-09 -9.59006e-09 1 -1.5707953071795862
+  scale 4.14547 4.14547 4.14547
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(17)"
+}
+Solid {
+  translation -2.20374 -0.383717 -0.01
+  rotation 9.59007e-09 -9.59006e-09 1 -1.5707953071795862
+  scale 4.40235 4.40235 4.40235
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(19)"
+}
+Solid {
+  translation -0.531736 -2.03657 -0.01
+  rotation -9.897504480422099e-09 0.018896108553928162 0.9998214526011723 1.01503e-06
+  scale 4.14547 4.14547 4.14547
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(18)"
+}
+Solid {
+  translation -0.555208 1.18764 -0.01
+  rotation -9.897504480422099e-09 0.018896108553928162 0.9998214526011723 1.01503e-06
+  scale 4.14547 4.14547 4.14547
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(9)"
+}
+Solid {
+  translation 0.201692 0.0138855 -0.15
+  rotation 9.59005e-09 9.59006e-09 1 1.5708
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(10)"
+}
+Solid {
+  translation 0.203263 -0.513839 -0.15
+  rotation 9.59005e-09 9.59006e-09 1 1.5708
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(11)"
+}
+Solid {
+  translation -0.309727 -0.939385 -0.15
+  rotation 2.770790720816356e-09 -0.005242091363720893 -0.9999862601446753 -5.307179586466759e-06
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(12)"
+}
+Solid {
+  translation -1.13996 -0.516914 -0.15
+  rotation 1.39103e-08 1.39103e-08 1 1.5708
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(13)"
+}
+Solid {
+  translation -0.341727 0.434359 -0.15
+  rotation 1.39103e-08 3.33493e-17 1 -3.1415853071795863
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(15)"
+}
+Solid {
+  translation -0.715246 -0.0614123 -0.15
+  rotation 1.39103e-08 3.33493e-17 1 -3.1415853071795863
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(20)"
+}
+Solid {
+  translation -0.480902 -0.43697 -0.15
+  rotation -8.19552e-09 1.39104e-08 -1 2.07676
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(16)"
+}
+Solid {
+  translation -0.711608 -0.942593 -0.15
+  rotation 2.770790720816356e-09 -0.005242091363720893 -0.9999862601446753 -5.307179586466759e-06
+  scale 1.21895 1.21895 1.21895
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(14)"
+}
+Solid {
+  translation 0.310332 -1.43978 -0.134627
+  rotation 0 0 -1 -5.307179586466759e-06
+  scale 1.14844 1.14844 1.14844
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(4)"
+}
+Solid {
+  translation 0.716453 -0.988813 -0.15
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(3)"
+}
+Solid {
+  translation 0.715728 -0.198142 -0.15
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(2)"
+}
+Solid {
+  translation 0.714381 0.59057 -0.15
+  rotation 0 0 1 1.5708
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0.3 1
+        roughness 1
+        metalness 0
+      }
+      geometry Box {
+        size 0.8 0.1 0.1
+      }
+      castShadows FALSE
+    }
+  ]
+  name "BATAS(1)"
+}
+DEF Rat0 E-puck {
+  hidden position_0_0 5.496022884815006e-08
+  hidden position_0_1 5.246470591571811e-15
+  hidden linearVelocity_0 -3.491573509421465e-10 -3.393402834145986e-10 -1.2316074086508404e-15
+  hidden angularVelocity_0 -6.641862783290091e-09 6.83446308174679e-09 -2.3813628595699046e-08
+  hidden rotation_1 0 1 0 5.16191365590357e-08
+  hidden linearVelocity_1 -7.625609260795062e-10 -7.411170123503497e-10 -1.1990416394528618e-15
+  hidden angularVelocity_1 3.7255716637828516e-08 -3.8333748100619855e-08 -2.3813630458729677e-08
+  hidden linearVelocity_2 1.3258277227957717e-10 1.2884882430482088e-10 -1.909584193037141e-15
+  hidden angularVelocity_2 -6.642069459412858e-09 6.8341401949053816e-09 -2.3813628964804926e-08
+  translation 0.9116479057802603 0.8674178610384006 -0.20006396199579052
+  rotation 2.3356505600537025e-10 1.5176430951035586e-09 1 -2.3704568338525567
+  name "Rat0"
+  controller "Rat0"
+}
